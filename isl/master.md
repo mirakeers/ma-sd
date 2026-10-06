@@ -68,6 +68,7 @@ Once the `Iota mini` plugin was properly setup, I followed through the video and
 - Making creative decisions at the start was very challenging, I felt too unexperienced to create something out of nothing. This was a mental block I had to get over
 - Some of the coolest DAW features for me were the MIDI editor with quantization, and the concept of buses and sends. I am also really excited to learn about automation and actions.
 - Still missing a lot of Mixing knowledge, but luckily that is my next topic
+- Next steps: maybe first switching to mixing techniques? Then finishing tutorial series, learning more about FX, and applying automation
 
 
 ### Notes & Timetracking
@@ -339,6 +340,8 @@ To use VST's built for windows on linux, I followed this guide on reddit into us
 By default, the routing buttons where turned off in my interface. I reenabled them by setting the layout of the track control panel: `Options > Layouts > Track Panel > (View) B`
 
 Continued on prototype by adding MIDI drum track, and started playing around with FX.
+
+![Current mix after adding drum line and finetuning](img/notes/reaper-06.png "Current mix after adding drum line and finetuning")
 
 </details>
 
