@@ -62,13 +62,13 @@ Once the `Iota mini` plugin was properly setup, I followed through the video and
 
 #### Before session of 06.10
 
-- Learning by doing worked best for me: I followed the tutorials, and follow along with them, as well as experiment a bit while watching them. This made it so I spent a lot of time on the videos itself, but I remember the contents of them a lot better.
+- Learning by doing worked best for me: I went through the tutorials, and followed along with the software, as well as experiment a bit while watching them. This made it so I spent a lot of time on the videos itself, but I remember the contents of them a lot better.
 - Quite a bit of problem solving, e.g. clunky at first with interface (eg accidentally making selections in the ruler all the time), MIDI recording also took a lot of practice, and figuring out how to use VSTs built for Windows on my Linux distro 
 - Hitting the target dB in recordings didn't always work
-- Making creative decisions at the start was very challenging, I felt too unexperienced to create something out of nothing. This was a mental block I had to get over
+- Making creative decisions at the start was very challenging, I felt too inexperienced to create something out of nothing. This was a mental block I had to get over
 - Some of the coolest DAW features for me were the MIDI editor with quantization, and the concept of buses and sends. I am also really excited to learn about automation and actions.
-- Still missing a lot of Mixing knowledge, but luckily that is my next topic
-- Next steps: maybe first switching to mixing techniques? Then finishing tutorial series, learning more about FX, and applying automation
+- Still missing a lot of Mixing knowledge, but luckily that is my next topi
+- Next steps: maybe first switching to mixing techniques? Then finishing tutorial series, learning more about FX, and applying automation.
 
 
 ### Notes & Timetracking
@@ -320,7 +320,7 @@ Started first recording session in Reaper, played around with a few riffs, then 
  #### Video 10: [Folders](https://www.reaper.fm/videos.php#GGY4UYBbxyM)
 
 - Folders are containers for multiple tracks, used for similar reasons as busses/sends
--To create a folder from a track, go to the `Folder` icon in the left bottom of the track, which then turns into a plus sign, sending all tracks underneath into the folder. Alternatively drag and drop tracks into `Folder` icon of parent
+- To create a folder from a track, go to the `Folder` icon in the left bottom of the track, which then turns into a plus sign, sending all tracks underneath into the folder. Alternatively drag and drop tracks into `Folder` icon of parent
 - Folders are nestable, opening up interesting workflows. Allows us to control things in a broader way, eg all drums, all guitar, etc
 - Folders are collapsible on two additional levels, keeping big projects neater.
 - Actions > filter on 'Folder' > Track: Cycle folder collapsed state` -> add keyboard shortcut if used often
@@ -346,16 +346,224 @@ Continued on prototype by adding MIDI drum track, and started playing around wit
 </details>
 
 ## Mixing Techniques
+## Mixing Techniques
 
 ### Learning process
 
+#### Step 1: Learn the basic concepts and practices around mixing and set up a reference library
+
+I read through the first five chapters of the book, making clippings to create an overview that I can refer back to when needed.
+
+The `Introduction` and the first chapter, `Music and mixing`, frames the concept of mixing as a machine to craft the sonic aspects of music and sound. One of the tracks mentioned in the first chapter, is Vic's and Wallace's mixes of Nirvana's Nevermind. Listening to and comparing both helped me understand how different mixing approaches can create drastically different results. The chapter also mentions a tool I found very helpful, namely creating excerpt sets, as a way to compare mixes, without allowing your brain to reset inbetween.
+
+The second chapter, `Some axioms and other gems` helped me get a better understanding of the main paradigms around mixing (louder is better, percussives weigh less, and the concepts of importance and natural vs artifical approach). I found specifically the natural vs artificial concept interesting, as I never really though about mixing in this way, but it resonates with me a lot.
+
+In the third chapter, `Learning to Mix`, I learned about Mixing Vision as circular process, constantly moving between vision, action and evaluation. It helped me have a better idea on how to describe my vision, and how to concretely start a mix by active listening and setting up the vision. It also mentions the importance of having a well set up reference library.
+
+After working through the first three chapters, I started setting up my own reference library. I got sidetracked here into developing a simple web app that lets me tag songs and add observation notes, as I didn't want to rely on yet another third-party service.
+
+I first created the datastructure out of my rough idea, which was to allow me to import songs from Spotify and annotate, categorize, organise, and filter them. [continue here shortly describing the dev process of my app]. 
+
+![Reference Library app](img/notes/mixing-01.png "Reference Library app")
+
+I started going through my Liked Songs, and added those whose mixes caught my attention the most. My goal is to establish a routine where I get the reflex to add songs to the library and add relevant notes and tags. This would allow me to at a later time sit down and do some critical listening exercises, to have my own database of recordings, allowing me to practise identifying different mixing characteristics. My plan is to also implement some type of excerpt set generator, or other comparison tools between different mixes (as well as of course style the app properly and improve its UX).
+
+The fourth chapter, `The process of mixing`, was one of the heftiest chapters, talking about arrangement, recording approaches, practical first steps . Luckily the book is very well written and easy to follow, allowing to get a broad basic knowledge of the mixing concepts. It also discusses an approach to drum mixing, which i found very useful. 
+
+As much as I was at this point aching to start a proper mixing session, I wanted to get through chapter 7, `Mixing domains and objectives` first, so I had a more practical sense of what to pay attention to. This chapter beautifully lays out the different mixing domains and the objectives they each affect. It starts by outlining the 4 principle objectives 
+
+The listening exercises in chapter seven focus on differentiating between frequency bands. A drum reference track is divided into its **low**, **low-mid**, **high-mid**, and **high** bands. The exercise is then repeated with a vocal track.
+
+I found it helpful to switch between the reference track and the isolated track. Hearing the differences took some time; the vocal example was considerably harder to distinguish than the more clearly separated frequency ranges of the drums. I found the difference between the low-mid and high-mid frequencies in the vocals interestingly distinctive. A useful technique was to import the audio files into a new Reaper project and adjust the levels of the different frequency bands during playback. This let me compare different proportions of each band.
+
+![Comparing frequency bands in Reaper](img/notes/mixing-02.png "Comparing frequency bands in Reaper")
+*Comparing frequency bands in Reaper*
+
+#### Step 2: Explore meters, equalizers, and panning while creating the first version of the mix
+
+In the next step, I started the multimix, while simultaneously reading deeper into the topics of Meters, EQ and panning.
+wanted to start the 
+##### Choosing the recording
+
+I chose the multitrack session [Human Radio multitrack session](https://www.telefunken-elektroakustik.com/multitrack/human-radio-radio/), from the multitracks hosted by TELEFUNKEN Elektroakustik.
+
+I chose this recording for a couple reasons. First, I filtered by Studio recordings, as I will mix a Live recording for another class, and want to compare the difference. I also assumed that working with studio recordings would be more within my comfort zone, as there is less need to deal with overdub processing and other issues. I am also very familiar with the genre as a listener, which will hopefully help me create a beautiful mix. The track count is also very managable, and the tracks where consistently named, so it seemed overall a very beginner-friendly project.
+
+The session is documented with the following info:
+
+> On Thursday, March 29th, TELEFUNKEN Elektroakustik hosted a microphone clinic and listening party at Java Jive Studio in Nashville, TN. The event featured TELEFUNKEN microphones exclusively on each instrument and voice. The music was performed by Human Radio, an American pop-rock band from Memphis, TN.
+>
+> The original song “You & Me & the Radio” was recorded through a D&R Cinemix console in Pro Tools HD at 24/44.1 through Black Lion modified 192 converters. No EQ or compression was used.
+>
+> Microphones featured in this session include the AR-70 Stereo on drum overheads, M80 Dynamics on snare and toms, and the new M82 Kick Dynamic on the kick drum. The M81 Universal Dynamic and AK-47mkII were employed on guitar rig, with the M80 Dynamic and CU-29 Copperhead positioned on the electric bass amp. Organ was tracked with a stereo pair of ELA M 260s and a stereo pair of CU-29s were stationed on the grand piano. The male lead vocals were cut using multiple microphones including the ELA M 251E, U47, CU-29, AR-51 and AK-47mkII.
+>
+> The multi-track files from this recording session are now available for download as part of the latest installment of the TELEFUNKEN Multi-Track Session Files. The audio files are presented as 44.1k / 24bit .WAV and can be imported into the digital audio workstation (DAW) of your choice and are zipped (using 7-Zip) in groups for ease of download. All the files are clearly labeled in the same format with the source listed first (LEAD VOX, ACOUSTIC, PIANO), followed by the microphone used (C12, AR-51, etc), and then the make and model of pre amplifier (BAE 1073, Manley, Neve, API, etc.).
+>
+> The session description states that the song was recorded through a D&R Cinemix console in Pro Tools HD at 24-bit/44.1 kHz, without EQ or compression during recording. The session features multiple microphones on several sources, including the drums, guitars, bass, organ, piano, and lead vocals. This gives me an opportunity to explore how the individual recorded tracks can be balanced and shaped during mixing.
+
+##### Session preparation and mixer organization
+
+Before making detailed mixing decisions, I organized the session to make it easier to navigate and understand.
+
+I renamed some files for clarity. For example, *Guitar 6* appeared to refer to the same sound as *Guitar 5*, so I checked the tracks and adjusted the naming where needed. I also added visual spacers and assigned colors to make the tracks and instrument groups easier to distinguish.
+
+I soloed duplicate or similar tracks so I could compare them and understand their individual contributions to the rough mix. I also enabled the option to collapse folders in the mixer. This made it easier to focus on particular instrument groups and adjust their levels without displaying every individual channel.
+
+This setup was helpful during the initial listening sessions. It reduced visual clutter and allowed me to make rough level adjustments across instrument groups. It also gave me a more structured starting point for the detailed mixing work.
+
+![Reaper project setup for playback](img/notes/mixing-03.png "Setup of the tracks in Reaper")
+
+*Setup of the tracks in Reaper.*
+
+![Reaper mixer setup](img/notes/mixing-04.png "Setup of the mixer in Reaper")
+
+*Setup of the mixer in Reaper.*
+
+##### Initial listening and assessment
+
+I listened to the song several times, both as a complete mix and by focusing on individual tracks and instrument groups. My goal here was to become familiar with the arrangement.
+
+**First impressions**
+- Genre is really comfortable, I would roughly classify it as Indie Pop Rock, the synth give a nice oldschool vibe to it
+- Love song with simple lyrics, playing on a nostalgic vibe of sitting with going on a roadtrip with your love and vibing on the music. 
+- There is a lot of overclipping happening due to duplicates in the track - solve first to create better rough mix
+- Synths become very montone very fast, needs a lot of variation to do its purpose justice
+- Right now very onedimensional
+- The  guitar track has very nice harmonic holded notes, is barely distinguishable in the master track, must give it place to breathe, at 01:22 might be an opportunity to play this riff solo
+- 02:02 / 03:30 Performance of high notes is inadequate, must be processed heavily to land well
+Chill energetic vibes
+
+
+Lyrical things that stand out:
+
+- 00:21  (I gave my love a red, red rose and it was) ***tick tock, tick tock** -> interesting element to play with
+- 00:36 I can't close to real emotion... (emotional moment, climax needs to be fitting) 
+- 01:09  Perfection in stereo
+- 01:17 "You and me and the radio" title drop, emotional shift from raw to intimate
+- 01:42 "And life is sweet and dangerous, but dont be frigthened"
+- 01:58 "When the song hits hard with the drums and guitar" very explicit almost an instruction
+- 02:14 "Rolling down the mountain as there's no way we're going slow" climactic moment again, needs focus
+- 02:52-03:06 "I gave my love...", back to the start of the song, going very melanchonic again here
+- 03:06: "Let's Rock, now we're rolling..." repetition of before again this time breaking the melanchonic feelings to raw feelings
+
+
+**Mixing vision**
+
+This is my first thoughts around a mixing vision for the track, I will later revise this once I get more ideas of what to listen for:
+
+***Mood***
+
+Create an intimate sound space, at moments felt as though it is only shared by the two lovers. For this, we also need more contrasting, open vibes at certain times in the song, maybe making the listener feel as though they switched to a different context.
+
+***Balance*** 
+
+Create a balanced level arrangement, so that each instrument gets its stage within the song (for this I need to learn about automation first). Make sure all instruments occupy their own space in the frequency spectrum, and create an interesting stereo balance throughout the song.
+
+***Definition*** 
+
+Make the lyrics more hearable and defined, and put them in focus during important parts.
+
+***Interest***
+
+Create variety, as the song involves, the arrangement should change to give every instrument its stage.
+
+
+
+##### First experiments: levels, meters, EQ, and panning
+
+
+I first focused on initial mic selection, deleting the tracks I most likely won't need, as I can always add them back in later.
+
+I rearranged the order of the drum tracks to make more sense to me: Kick, Snare, Tom, Hat, Tambourine, All, Room. For the OH and Room drum tracks, (send to master in Left and Right channel only, adjust pan to 100%. when listened in isolation makes the drums immediately more dynamic). 
+
+
+I muted the individual tracks so I could blend them back in at a later point in time. I reduced the Room sound a little bit.
+
+ 
+For the Bass Guitar, I used the CU mic as it had a better clarity, and removed the other mic for the time being. I now had a single track to work with.
+
+The guitar mic selection was more time-consuming. The AK and M80 mics used produced completely different results, with the AK being a clean track, and the M80 containing the reverbs and distortions. I kept both mics unmuted but turned the level of the M80 mic much down.
+
+Guitar 1 and 2 are two takes of the same track, with some parts having been added back in. I used the take 1 for the more interesting start riff, and take 2 during the clean split, but I'm planning to later still cut more in detail. I discarded guitar 4 for now as I preferred the Guitar 3 for this take. 
+
+
+For the vocals, the 251 mic was the better choice as it gave an overall better clarity.
+
+Next, I roughly panned some of the instruments as if they would appear on a stage, with the vocals in the center, and the other instruments arranged around it . Detailed panning was hard without a playback system, so I moved on to first EQ adjustments.
+
+
+![Initial rough mix](img/notes/mixing-05.png "Initial rough mix")
+*Initial rough mix*
+
+I started with adding the individual drum tracks back in and cleaning up the sound of each.
+I added high-pass filters accross the different drum tracks, with as goal to clean up / define certain bands on the spectrum. I then muted the joint track, and blended in with the room sound to preserve some natural sound. 
+
+I continued adding EQ adjustments to bass, guitar, and keys, trying to improve each sound by amplifying the frequencies that added the most to the overall sound, and reducing those that other instruments occupy, but not overdoing it, so that the samples didn't become too flat. Here it was helpful to toggle the effects on and off regularly. I found it in general the most helpful to work on a progressive basis, starting with solo'ing a single track, then slowly adding the other tracks to hear it in its context and adjusting where needed.
+
+
+![EQ Settings for Organ track](img/notes/mixing-06.png "EQ Settings for Organ track")
+*EQ Settings for Organ track: explain later*
+
+![Mix after setup and first EQ changes](img/notes/mixing-07.png "Mix after setup and first EQ changes")
+*Mix after setup and first EQ changes*
+
+
+I started by using the JS Audio Statistics and JS: Loudness Meter Peak plugin on the master. The first thing what was clear was that a lot of overclipping is happening, because of overlayed sounds, so it made sense to select the useful tracks first.
+
+
+
+#### Step 3: Learn about compressors, reverbs, and mixing consoles, then finalize the mix
+
+(if time left)
+
+
 ### Resources
+
+- [Book title, author, edition, and chapters used]
+- [Mixing reference tracks or listening resources]
+- [Tutorial or article: topic and link]
+- [TELEFUNKEN Elektroakustik — Human Radio multitrack session](https://www.telefunken-elektroakustik.com/multitrack/human-radio-radio/)
 
 ### Feedback
 
 ### Final Results
 
 ### Reflection
+
+### Notes & Timetracking
+
+
+🕒 ***Total tracked time: approx. 27 hours***
+
+
+#### Introduction
+
+- What is *really* the origin of mixing? Orchestral pieces as primitive form of mixing, placing people in certain areas of the room to create a well rounded, sonic combination of intstruments
+- Intrinsically tied to the technologies: **multitrack tape machine** signifies start of mixing as we know it. It allowed us to repeatedly play recorded sound before commiting to its sonic treatment in the mix. More control over the individual tracks, rather then just the master
+- 1996: `Cubase VST` as first audio plugin as we know it: "Software that can
+perform realtime audio calculations using the computer’s CPU"
+- Improvement of CPU power, **project studio**, as a studio running on your pc (contrasted with professional studio who now more compete on acoustic quality rather then abilities)
+- This allowed for the democratization of mixing, as a side effect though professional mixing (traditionally the only focus of a certain employee), is now just a part in the process
+- First, barely any literature about mixing, now the opposite, overwhelming amount of sources. This book aims to collect all info in 1 place.
+- Biggest miconception: Mixing as purely technical skill, in reality the technical aspects can be mastered, but creating an interesting listening experience is a completely different skill. This entails the **crafting of sonic aspects of music** "*shaping sounds, crystallizing soundscapes,
+establishing harmony between instruments, and building impact all rely on the many
+creative decisions that we make*" -> **mix as sonic portrait**
+- Mind listening safety!!
+
+   
+eq, panning, compression, busses / sends, reverb
+
+![Notes Mixing](img/notes/mixing-notes-01.jpeg "Notes Mixing")
+![Notes Mixing](img/notes/mixing-notes-02.jpeg "Notes Mixing")
+![Notes Mixing](img/notes/mixing-notes-03.jpeg "Notes Mixing")
+![Notes Mixing](img/notes/mixing-notes-04.jpeg "Notes Mixing")
+![Notes Mixing](img/notes/mixing-notes-05.jpeg "Notes Mixing")
+![Notes Mixing](img/notes/mixing-notes-06.jpeg "Notes Mixing")
+![Notes Mixing](img/notes/mixing-notes-07.jpeg "Notes Mixing")
+![Notes Mixing](img/notes/mixing-notes-08.jpeg "Notes Mixing")
+![Notes Mixing](img/notes/mixing-notes-09.jpeg "Notes Mixing")
+
+
 
 ## Audio Technology
 
