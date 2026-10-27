@@ -88,13 +88,21 @@ I then wanted to improve the drums mixing, so I split the MIDI track up, by copy
 
 I decided to pan the drums inbetween the two guitar tracks, as I wanted to highlight the effect on the guitars, so it sounded right for the drums to be positioned closer to the center. I decided for an "audience-view" drum panning approach, as it seemed appropiate for the context of the song (somebody arriving home and starting to relax). I tried to increase the 40% pan on the guitar tracks to see how a higher contrast would play out, but it sounded off, so I left it at 40% and the Hi-Hat & snare at 20%. After splitting up the drums, the track sounded a lot better to my ears, I think it improved the interest of the song.
 
-(ADD PICTURE Drum tracks)
+
+![Seperated drum tracks](img/notes/reaper-07.png "Seperated drum tracks")
+
+*Seperated drum tracks*
+
 
 I then proceeded by going back to the basics and bypassed all volume envelopes, then re-leveled all tracks to what sounded good to my ears. I then only kept the volume envelopes that worked the best (and redrew them where need), and left the other tracks bypassed.
 
 Finally, I fixed any overclipping by selecting all tracks, pulling them slightly down, then putting a limiter on the master track. This time I rendered the WAV with a sample rate of 48 kHz.
 
-(ADD PICTURE Final version)
+
+
+![Final Reaper project](img/notes/reaper-08.png "Final Reaper project")
+
+*Final Reaper project*
 
 ### Resources
 
@@ -334,10 +342,14 @@ Finally, I learned how effects such as short delays can widen and thicken sounds
 
 ![Soundscape visualization by David Gibson](img/notes/mixing-08.png "Soundscape visualization by David Gibson")
 
+*Soundscape visualization by David Gibson*
+
 To finalize my artefact, I wanted to add more dimension to the song. I focused on the first 90 seconds of the song from now on. With my newly learned Soundscape analogy, I started to "move" my tracks around through drawing volume envelopes. I tried to identify different moments in time where i wanted to move the instruments around to create a mix that sounded more interesting to me.  
 
 
 ![Volume envelopes in Reaper](img/notes/mixing-09.png "Volume envelopes in Reaper")
+
+*Volume envelopes in Reaper*
 
 After many hours in Reaper, I was happy enough with how the song turned out. I checked the loudness peaks in the `Loudness Meter Peak` on the master buss, and noticed it was quite a bit heavy on the  left side. Trying to balance the song out, I panned the bass a bit further to the right, and split up the panning of the organ and the piano. I gave it a final listen and am overall happy with the progress I made.
 
@@ -512,7 +524,7 @@ To continue learning, I want to cover the following topics:
 
 ## Notes and Timetracking
 
-🕒 ***Total tracked time overall: approx. 64 hours***
+🕒 ***Total tracked time overall: approx. 63 hours***
 
 
 ### Reaper
@@ -768,10 +780,7 @@ Started first recording session in Reaper, played around with a few riffs, then 
 - Subtracks can be hidden in mixer by unchecking context > `Show tracks that are in folders`
 
 
-#### Video 11: [Track Grouping](https://www.reaper.fm/videos.php#3tmI88BKnb8)
-#### Video 12: [Markers & Regions](https://www.reaper.fm/videos.php#3tmI88BKnb8)
 
--  
 #### In action
 
 
@@ -782,6 +791,7 @@ By default, the routing buttons where turned off in my interface. I reenabled th
 Continued on prototype by adding MIDI drum track, and started playing around with FX.
 
 ![Current mix after adding drum line and finetuning](img/notes/reaper-06.png "Current mix after adding drum line and finetuning")
+*Current mix after adding drum line and finetuning*
 
 
 #### Before session of 06.10
@@ -805,10 +815,17 @@ Continued on prototype by adding MIDI drum track, and started playing around wit
 
 </details>
 
+<details>
+  <summary>27.10.2026: 🕒 4 hours</summary>
+
+  Improving mix: see [Step 3: Refine mix with gathered knowledge](#step-3%3A-refine-mix-with-gathered-knowledge)
+
+</details>
+
 ### Mixing Techniques
 
 
-🕒 ***Total tracked time: approx. 36 hours***
+🕒 ***Total tracked time: approx. 31 hours***
 
 <details>
   <summary>07.10.2026: 🕒 2 hours</summary>
@@ -877,11 +894,6 @@ Continued on prototype by adding MIDI drum track, and started playing around wit
 
 </details>
 
----
-<details>
-  <summary>12.10.2026: 🕒 5 hours</summary>
-
-</details>
 
 ---
 <details>
@@ -958,7 +970,7 @@ Continued on prototype by adding MIDI drum track, and started playing around wit
   ![Notes Microphones](img/notes/mics-notes-02.jpeg "Notes Microphones")
   ![Notes Microphones](img/notes/mics-notes-03.jpeg "Notes Microphones")
 
-  See (Step 2: Learn about the inner workings of dynamic, ribbon and condenser microphones)[#step-2%3A-learn-about-the-inner-workings-of-dynamic%2C-ribbon-and-condenser-microphones]
+  See [Step 2: Learn about the inner workings of dynamic, ribbon and condenser microphones](#step-2%3A-learn-about-the-inner-workings-of-dynamic%2C-ribbon-and-condenser-microphones)
 </details>
 
 ---
@@ -967,7 +979,7 @@ Continued on prototype by adding MIDI drum track, and started playing around wit
 
   #### Research mics and generate comparison table
   
-  See (Step 3: Create a comparison table between the microphones)[#step-3%3A-create-a-comparison-table-between-the-microphones]
+  See [Step 3: Create a comparison table between the microphones](#step-3%3A-create-a-comparison-table-between-the-microphones)
 
 
 </details>
@@ -978,7 +990,7 @@ Continued on prototype by adding MIDI drum track, and started playing around wit
 
   ### Render and compare audio samples
 
-  See (Step 4: Compare microphone sounds)[#step-2%3A-learn-about-the-inner-workings-of-dynamic%2C-ribbon-and-condenser-microphones]
+  See [Step 4: Compare microphone sounds](#step-2%3A-learn-about-the-inner-workings-of-dynamic%2C-ribbon-and-condenser-microphones)
 
   ### Notes for [ "Dynamic vs Condenser Microphones | What's The Difference?" by Audio University ](https://www.youtube.com/watch?v=dM5AgwWimEE)
 
